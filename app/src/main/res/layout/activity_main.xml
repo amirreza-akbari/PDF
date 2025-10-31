@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F2F5"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📄 برنامه ساخت و نمایش PDF"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="30dp" />
+
+        <EditText
+            android:id="@+id/editTextContent"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:hint="متن خود را اینجا بنویسید..."
+            android:background="@drawable/edit_text_bg"
+            android:padding="16dp"
+            android:gravity="top|start"
+            android:textSize="16sp"
+            android:scrollbars="vertical"
+            android:overScrollMode="always"
+            android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/btnCreatePdf"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="📘 ساخت PDF"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#50C878"
+            android:layout_marginTop="24dp"
+            android:fontFamily="sans-serif-medium" />
+
+        <Button
+            android:id="@+id/btnViewPdfs"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="📂 مشاهده PDF ها"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#2196F3"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-medium" />
+
+    </LinearLayout>
+</ScrollView>

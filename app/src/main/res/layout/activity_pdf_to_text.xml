@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#F0F2F6">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="📄 متن استخراج‌شده"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#2C3E50"
+        android:gravity="end"
+        android:layout_gravity="end"
+        android:paddingBottom="20dp" />
+
+    <EditText
+        android:id="@+id/editTextPdfContent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="top|start"
+        android:hint="در حال بارگذاری..."
+        android:background="@android:drawable/edit_text"
+        android:textSize="16sp"
+        android:inputType="textMultiLine"
+        android:scrollbars="vertical"
+        android:focusable="false"
+        android:padding="16dp"
+        android:elevation="4dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCopyText"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:text="📋 کپی متن"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            app:cornerRadius="16dp"
+            android:backgroundTint="#4A90E2"
+            android:layout_marginEnd="8dp"
+            android:elevation="4dp"
+            android:fontFamily="sans-serif-medium" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSaveText"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:text="💾 ذخیره فایل .txt"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            app:cornerRadius="16dp"
+            android:backgroundTint="#50C878"
+            android:layout_marginStart="8dp"
+            android:elevation="4dp"
+            android:fontFamily="sans-serif-medium" />
+    </LinearLayout>
+</LinearLayout>
