@@ -34,15 +34,9 @@ This project was created as part of the **Android 2** course to practice:
 - Handling user input  
 - Implementing modern Android app architecture  
 
----
 
-## 📸 Screenshots
 
-| Home Screen | Details Screen |
-|--------------|----------------|
-| ![Home](images/home.png) | ![Details](images/details.png) |
 
-*(Add your app screenshots in the `images` folder and update the paths above.)*
 
 ---
 
